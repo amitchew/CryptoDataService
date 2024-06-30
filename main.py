@@ -14,6 +14,8 @@ load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+PORT=os.getenv("PORT")
+
 database = Database(DATABASE_URL)
 Base = declarative_base()
 
@@ -68,4 +70,4 @@ async def read_crypto_data():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=PORT)
