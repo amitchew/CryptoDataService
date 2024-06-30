@@ -2,6 +2,9 @@
 
 CryptoTradeAPI is a FastAPI-based service that provides cryptocurrency trade and market data. It interacts with a PostgreSQL database to store and retrieve data about various cryptocurrencies.
 
+## Deployed
+https://cryptodataservice.onrender.com
+
 ## Features
 
 - Store new trade data entries.
